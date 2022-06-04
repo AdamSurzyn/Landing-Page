@@ -1,14 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
 
+:root{
+    --whole-thing: 100%;
+    --sign-up-width: 65%;
+    --stripe-width: calc(var(--whole-thing) - var(--sign-up-width));
+}
 
+html{
+    height: 100%;
+}
 body {
     background-image: url(../Landing-Page/images/wotlk.jpg);
     height: 100%;
-    width: 100%;
+    width: var(--whole-thing);
     margin: 0px;
 }
 
 .container{
+    height: 100%;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -16,9 +25,14 @@ body {
 }
 
 .sign-up{
-    width: 70%;
+    width: var(--sign-up-width);
     height: 100%;
-    background-color: bisque;
+    background-color: rgb(247, 239, 229);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
 }
 
 .opaque-stripe{
@@ -27,9 +41,9 @@ body {
     justify-content: center;
     align-items: center;
     background-color: black ;
-    opacity: 0.5;
+    opacity: 0.4;
     height: 20%;
-    width: 30%;
+    width: var(--stripe-width);
     border: 1px solid black;
 }
 
@@ -44,3 +58,29 @@ body {
     font-size: max(70px, 100%);
     height: auto;
 }
+
+.text {
+    font-family: 'Nunito', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.3em;
+    font-weight: bold;
+    padding-right: 5%;
+    padding-left: 5%;
+}
+
+.sign-up-forms{
+    width: 100%;
+    height: 30%;
+    background-color: aliceblue;
+    box-shadow:navy;
+    padding-top:1.3em;
+    padding-bottom:1.3em;
+}
+
+.sign{
+    font-family: 'Nunito', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.3em;
+    font-weight: bold;
+    padding-right: 5%;
+    padding-left: 5%;
+}
+
