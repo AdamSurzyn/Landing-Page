@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&family=Quicksand:wght@300&display=swap');
 :root{
     --whole-thing: 100%;
     --sign-up-width: 65%;
@@ -76,13 +76,46 @@ body {
     box-shadow:navy;
     padding-top:1.3em;
     padding-bottom:1.3em;
+    display: flex;
+    justify-content: center;
 }
 
-.sign-up-table{
+.sign-up-table {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
     font-family: 'Nunito', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 1.3em;
     font-weight: bold;
+    width:100%;
+}   
+
+.sign-up-table fieldset{
+    width: 100%;
+    border: 0px;
+    padding: 0 5% 0 5%;
+    margin: 0px
 }
 
+.sgn-up-rw-1, .sgn-up-rw-2, .sgn-up-rw-3{
+    display: flex;
+    margin: 3% 0 3%;
+}
+.sgn-up-cont{
+    display: flex;
+    flex-direction: column;
+    padding-right: 4em;
+    
+}
+
+.sgn-up-cont label{
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 400;
+    font-size: medium;
+}
+
+.sgn-up-cont input{
+    border: solid lightgray 1px;
+    border-radius: 5%;
+    height: 1.8em;
+}
