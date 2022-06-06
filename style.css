@@ -27,7 +27,7 @@ body {
 .sign-up{
     width: var(--sign-up-width);
     height: 100%;
-    background-color: rgb(247, 239, 229);
+    background-color: rgb(221, 241, 247);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -50,13 +50,15 @@ body {
 .logo img{
     width:80px; 
     height: auto;
+    opacity: 1;
 }
 
 .odin {
     font-family:'Nunito', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: aliceblue;
+    color: rgb(255, 255, 255);
     font-size: max(70px, 100%);
     height: auto;
+    opacity: 1;
 }
 
 .text {
@@ -76,11 +78,11 @@ body {
     padding-bottom:1.3em;
 }
 
-.sign{
+.sign-up-table{
+    display: flex;
+    justify-content: space-between;
     font-family: 'Nunito', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 1.3em;
     font-weight: bold;
-    padding-right: 5%;
-    padding-left: 5%;
 }
 
